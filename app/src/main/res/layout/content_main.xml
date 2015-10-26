@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/AppBackground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BtnAppSpotify"
+        android:id="@+id/btnAppSpotify"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="67dp"
+        android:background="@color/UdacityBackground"
+        android:layout_alignLeft="@+id/titleView"
+        android:layout_alignStart="@+id/titleView"
+        android:layout_alignRight="@+id/titleView"
+        android:layout_alignEnd="@+id/titleView"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAppSuperDuo"
+        android:id="@+id/btnAppSuperDuo"
+        android:layout_marginTop="@dimen/buttonsSeparation"
+        android:layout_below="@+id/btnAppSpotify"
+        android:layout_alignRight="@+id/btnAppSpotify"
+        android:layout_alignEnd="@+id/btnAppSpotify"
+        android:layout_alignLeft="@+id/btnAppSpotify"
+        android:layout_alignStart="@+id/btnAppSpotify"
+        android:background="@color/UdacityBackground"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAppBuildIt"
+        android:id="@+id/btnAppBuildIt"
+        android:layout_marginTop="@dimen/buttonsSeparation"
+        android:layout_below="@+id/btnAppSuperDuo"
+        android:layout_alignLeft="@+id/btnAppSuperDuo"
+        android:layout_alignStart="@+id/btnAppSuperDuo"
+        android:layout_alignRight="@+id/btnAppSuperDuo"
+        android:layout_alignEnd="@+id/btnAppSuperDuo"
+        android:background="@color/UdacityBackground"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAppXYZ"
+        android:id="@+id/btnAppXYZ"
+        android:layout_below="@+id/btnAppBuildIt"
+        android:layout_marginTop="@dimen/buttonsSeparation"
+        android:layout_alignLeft="@+id/btnAppBuildIt"
+        android:layout_alignStart="@+id/btnAppBuildIt"
+        android:layout_alignRight="@+id/btnAppBuildIt"
+        android:layout_alignEnd="@+id/btnAppBuildIt"
+        android:background="@color/UdacityBackground"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAppCaps"
+        android:id="@+id/btnAppCapstone"
+        android:layout_below="@+id/btnAppXYZ"
+        android:layout_alignLeft="@+id/btnAppXYZ"
+        android:layout_alignStart="@+id/btnAppXYZ"
+        android:layout_alignRight="@+id/btnAppXYZ"
+        android:layout_marginTop="@dimen/buttonsSeparation"
+        android:layout_alignEnd="@+id/btnAppXYZ"
+        android:background="@color/CapstoneAppBackground"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/appTitle"
+        android:id="@+id/titleView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
